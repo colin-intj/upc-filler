@@ -10,24 +10,30 @@
   <body>
     <h1>UPC Filler</h1>
     <form action="javascript:void(0);">
-      <label for="first-digits">
-        Enter first digits:
-        <input type="number" id="first-digits">
-      </label>
+      <fieldset class="input-fieldset">
+        <legend>Enter UPC Information</legend>
+        <label for="first-digits">
+          Enter first digits:
+          <input type="number" id="first-digits">
+        </label>
 
-      <label for="last-digits">
-        Enter last digits:
-        <input type="number" id="last-digits">
-      </label>
+        <label for="last-digits">
+          Enter last digits:
+          <input type="number" id="last-digits">
+        </label>
 
-      <label for="repeating-digit">
-        Enter repeating digit:
-        <input type="number" min="0" max="9" id="repeating-digit">
-      </label>
+        <label for="repeating-digit">
+          Enter repeating digit:
+          <input type="number" min="0" max="9" id="repeating-digit">
+        </label>
 
-      <button type="submit">Generate UPC</button>
+        <button type="submit">Generate UPC</button>
+      </fieldset>
 
-      <label for="full-upc">UPC: <output id="full-upc"></output></label>
+      <fieldset class="output-fieldset">
+        <legend>Full UPC</legend>
+        <output id="full-upc">############</output>
+      </fieldset>
     </form>
   </body>
 </html>

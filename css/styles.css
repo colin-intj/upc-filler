@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
-form > * {
-  display: block;
-  margin: 8px 0;
+fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 
-label[for="full-upc"] {
+legend {
   font-weight: bold;
+}
+
+button[type="submit"] {
+  width: fit-content;
 }
