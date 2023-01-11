@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>UPC Filler</h1>
-    <main>
+    <form action="javascript:void(0);">
       <label for="first-digits">
         Enter first digits:
         <input type="number" id="first-digits">
@@ -22,12 +22,12 @@
 
       <label for="repeating-digit">
         Enter repeating digit:
-        <input type="number" id="repeating-digit">
+        <input type="number" min="0" max="9" id="repeating-digit">
       </label>
 
-      <button id="submit-button">Generate UPC</button>
+      <button type="submit">Generate UPC</button>
 
-      <p><strong>UPC: <output id="full-upc"></output></strong></p>
-    </main>
+      <label for="full-upc">UPC: <output id="full-upc"></output></label>
+    </form>
   </body>
 </html>

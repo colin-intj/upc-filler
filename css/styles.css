@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-main > * {
+form > * {
   display: block;
   margin: 8px 0;
+}
+
+label[for="full-upc"] {
+  font-weight: bold;
 }

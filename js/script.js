@@ -20,7 +20,7 @@ const generateUPC = (firstDigits, lastDigits, repeatingDigit) => {
   return fullUPC;
 };
 
-document.getElementById('submit-button').onclick = () => {
+document.getElementsByTagName('form')[0].onsubmit = () => {
   const firstDigits = document.getElementById('first-digits').value;
   const lastDigits = document.getElementById('last-digits').value;
   const repeatingDigit = document.getElementById('repeating-digit').value;
