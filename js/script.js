@@ -25,6 +25,17 @@ document.getElementsByTagName('form')[0].onsubmit = () => {
   const lastDigits = document.getElementById('last-digits').value;
   const repeatingDigit = document.getElementById('repeating-digit').value;
 
-  document.getElementById('full-upc').textContent =
-      generateUPC(firstDigits, lastDigits, repeatingDigit);
+  const fullUPC = generateUPC(firstDigits, lastDigits, repeatingDigit);
+
+  document.getElementById('full-upc').textContent = fullUPC;
+};
+
+document.getElementById('copy-upc').onclick = (event) => {
+  const fullUPC = document.getElementById('full-upc').textContent;
+
+  navigator.clipboard.writeText(fullUPC);
+  event.target.textContent = 'Copied';
+  setTimeout(() => {
+    event.target.textContent = 'Copy UPC';
+  }, 500);
 };
