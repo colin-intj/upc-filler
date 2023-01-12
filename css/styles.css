@@ -10,6 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -18,8 +24,4 @@ fieldset {
 
 legend {
   font-weight: bold;
-}
-
-button[type="submit"] {
-  width: fit-content;
 }
